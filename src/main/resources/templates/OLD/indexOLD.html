@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesOLD.css">
+    <title>Currency Exchange Calculator</title></head>
+<body>
+
+<p>Welcome to Simple Exchange Converter with live rates!</p>
+<br>
+
+<form  id="exchange" action="/">
+    <label>Amount of:</label>
+    <input type="text" name="amountfrom" th:value="${amountfrom}" oninput="this.value=this.value.replace(/[^0-9]/g,'');">
+
+    <select name="from">
+        <option value="PLN">PLN</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="USD">USD</option>
+        <option value="RUB">RUB</option>
+        <option value="JPY">JPY</option>
+        <option value="CZK">CZK</option>
+    </select>
+
+    <label>gives:</label>
+
+    <select name="to">
+        <option value="PLN">PLN</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="USD">USD</option>
+        <option value="RUB">RUB</option>
+        <option value="JPY">JPY</option>
+        <option value="CZK">CZK</option>
+    </select>
+
+    <input type="submit" value="Convert">
+
+    <input type="text" name="value" disabled    th:value="${valueto}">
+    </form>
+
+<br><br>
+<table class="steelBlueCols">
+    <thead>
+    <tr>
+        <th>PLN to </th>
+        <th>Rate</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>EUR</td>
+        <td><div th:text="${ratetoeur}"/></td>
+    </tr>
+    <tr>
+        <td>GBP</td>
+        <td> <div th:text="${ratetogbp}"/></td>
+    </tr>
+    <tr>
+        <td>USD</td>
+        <td><div th:text="${ratetousd}"/></td>
+    </tr>
+    <tr>
+        <td>RUB</td>
+        <td><div th:text="${ratetorub}"/></td>
+    </tr>
+    <tr>
+        <td>JPY</td>
+        <td><div th:text="${ratetojpy}"/></td>
+    </tr>
+    <tr>
+        <td>CZK</td>
+        <td><div th:text="${ratetoczk}"/></td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

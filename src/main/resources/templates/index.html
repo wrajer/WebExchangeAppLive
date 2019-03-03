@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>  <!-- polskie znaku -->
+    <title>Exchange Currency Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css"></link> <!-- nakierownie na style CSS -->
+</head>
+
+<body>
+
+<div class="containerFor">
+    <br>
+    <span style="color:white;  font-family: Arial, Helvetica, sans-serif;	 font-size: 40px;   padding-top:20px;">
+			 Exchange Currency Calculator
+    </span>
+
+
+    <div class="paddingauto">
+        <br>
+
+        <form action="/">
+
+            <div class="font-input">
+                <div class="title"> Amount to change</div>
+                <input type="number" name="amountfrom" th:value="${from}" placeholder="Input amount" min="0"
+                       style="text-transform:capitalize;">
+            </div>
+
+
+            <div>
+                <tytul class="font-input">From</tytul>
+                <select name="from" id="from" style="text-transform:capitalize;">
+                    <option value="PLN">PLN</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="USD">USD</option>
+                    <option value="RUB">RUB</option>
+                    <option value="JPY">JPY</option>
+                    <option value="CZK">CZK</option>
+                </select>
+
+
+                <tytul class="font-input"> to</tytul>
+                <select name="to" id="to" style="text-transform:capitalize;">
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="USD">USD</option>
+                    <option value="RUB">RUB</option>
+                    <option value="JPY">JPY</option>
+                    <option value="CZK">CZK</option>
+                    <option value="PLN">PLN</option>
+                </select>
+                <br>
+
+                <p style=" padding-left: 20px;">
+                    <input type="submit" name="submit" value="Exchange" class="btn-login"><br>
+                </p>
+
+                <div class="font-input">
+                    <div class="title">Amount will get</div>
+                    <input type="number" name="value" disabled th:value="${valueto}" placeholder="Press Exchange"
+                           min="0"
+                           style="text-transform:capitalize;">
+                </div>
+
+
+                <div>
+                    <table class="steelBlueCols">
+                        <thead>
+                        <tr>
+                            <th>PLN to</th>
+                            <th>Rate</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>EUR</td>
+                            <td>
+                                <div th:text="${ratetoeur}"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>GBP</td>
+                            <td>
+                                <div th:text="${ratetogbp}"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>USD</td>
+                            <td>
+                                <div th:text="${ratetousd}"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>RUB</td>
+                            <td>
+                                <div th:text="${ratetorub}"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>JPY</td>
+                            <td>
+                                <div th:text="${ratetojpy}"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>CZK</td>
+                            <td>
+                                <div th:text="${ratetoczk}"/>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <br>
+
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+    <img src="logo.png"  >
+
+
+</div>
+
+</body>
+</html>
+
+

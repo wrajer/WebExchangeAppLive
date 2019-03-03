@@ -1,0 +1,176 @@
+table.steelBlueCols {
+	background-color: #6F6F6F;
+	width: 160px;
+	text-align: center;
+	border-collapse: collapse;
+}
+table.steelBlueCols td, table.steelBlueCols th {
+	border: 1px solid #555555;
+	padding: 5px 5px;
+}
+table.steelBlueCols tbody td {
+	font-size: 13px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+table.steelBlueCols td:nth-child(even) {
+	background: #1E4856;
+}
+table.steelBlueCols thead {
+	border-bottom: 5px solid #122A32;
+}
+table.steelBlueCols thead th {
+	font-size: 15px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-align: left;
+	border-left: 5px solid #122A32;
+}
+table.steelBlueCols thead th:first-child {
+	border-left: none;
+}
+
+table.steelBlueCols tfoot td {
+	font-size: 15px;
+}
+
+
+
+html {
+	background-image: url("maxresdefault.jpg");
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-attachment: fixed;
+	background-color: RGB(242,242,242);
+}
+
+
+#from{
+	width:50px;
+	height: 30px;
+	border-radius: 4px;
+}
+
+#to{
+	width:50px;
+	height: 30px;
+	border-radius: 4px;
+}
+
+
+
+.containerFor{
+	position: relative;
+	width: 400px;
+	height: 620px;
+	text-align: center;
+	background-color: rgba(52, 73, 94, 0.7);
+	border-radius: 4px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+
+
+
+
+
+.padding150{
+
+	padding-left: 150px;
+	text-align: centre;
+}
+
+
+.paddingauto{
+	margin-left: auto;
+	margin-right: auto;
+	width: 10em
+}
+
+.title {
+	text-align: left;
+}
+
+
+.container imgcentre{
+	 width: 150px;
+	 height: 150px;
+	 margin-top: -168px;
+	 margin-bottom: -325px;
+
+ }
+
+img{
+	width: 200px;
+
+
+}
+
+
+input[type="text"], input[type="number"] {
+	height: 30px;
+	width: 140px;
+	font-size: 15px;
+	border-radius: 4px;
+	border: none;
+	margin-bottom: 15px;
+	margin-top: 5px;
+	background-color: #fff;
+	padding-left: 10px;
+
+}
+
+textarea{
+	font-size: 15px;
+	border-radius: 4px;
+	border: none;
+	margin-bottom: 15px;
+	margin-top: 5px;
+	background-color: #fff;
+	padding-left: 15px;
+
+}
+
+
+.font-input{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color:white;
+
+
+}
+
+
+.btn-login{
+	padding: 15px 30px;
+	color: #fff;
+	background-color: #1E4856;
+
+
+	border-radius: 4px;
+
+	/* border-bottom: 1px solid;
+    border-right: 1px solid */
+
+}
+a{
+	color: #fff;
+
+}
+
+.btn {
+	border: none; /* Remove borders */
+	color: white; /* Add a text color */
+	/* Add some padding padding: 14px 14px; */
+	cursor: pointer; /* Add a pointer cursor on mouse-over */
+	font-size: 15px;
+	border-radius: 4px;
+	width: 250px;
+}
+
+.success {background-color: #4CAF50;} /* Green */
+
+
+
+
