@@ -30,25 +30,27 @@
             <div>
                 <tytul class="font-input">From</tytul>
                 <select name="from" id="from" style="text-transform:capitalize;">
-                    <option value="PLN">PLN</option>
-                    <option value="EUR">EUR</option>
-                    <option value="GBP">GBP</option>
-                    <option value="USD">USD</option>
-                    <option value="RUB">RUB</option>
-                    <option value="JPY">JPY</option>
-                    <option value="CZK">CZK</option>
+
+                    <option value="PLN"  th:selected="${from==PLN}">PLN</option>
+                    <option value="EUR" th:selected="${from=='EUR'}">EUR</option>
+                    <option value="GBP" th:selected="${from=='GBP'}">GBP</option>
+                    <option value="USD" th:selected="${from=='USD'}">USD</option>
+                    <option value="RUB" th:selected="${from=='RUB'}">RUB</option>
+                    <option value="JPY" th:selected="${from=='JPY'}">JPY</option>
+                    <option value="CZK" th:selected="${from=='CZK'}">CZK</option>
                 </select>
+
 
 
                 <tytul class="font-input"> to</tytul>
                 <select name="to" id="to" style="text-transform:capitalize;">
-                    <option value="EUR">EUR</option>
-                    <option value="GBP">GBP</option>
-                    <option value="USD">USD</option>
-                    <option value="RUB">RUB</option>
-                    <option value="JPY">JPY</option>
-                    <option value="CZK">CZK</option>
-                    <option value="PLN">PLN</option>
+                    <option value="EUR" th:selected="${to=='EUR'}">EUR</option>
+                    <option value="GBP" th:selected="${to=='GBP'}">GBP</option>
+                    <option value="USD" th:selected="${to=='USD'}">USD</option>
+                    <option value="RUB" th:selected="${to=='RUB'}">RUB</option>
+                    <option value="JPY" th:selected="${to=='JPY'}">JPY</option>
+                    <option value="CZK" th:selected="${to=='CZK'}">CZK</option>
+                    <option value="PLN" th:selected="${to=='PLN'}">PLN</option>
                 </select>
                 <br>
 
