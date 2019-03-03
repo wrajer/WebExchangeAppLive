@@ -20,6 +20,8 @@ public class IndexController {
         if (amountfrom!=null && from!=null && to!=null) {
             modelMap.put("valueto", Double.parseDouble(amountfrom) * CurrencyConverter.convert(Currency.valueOf(from), Currency.valueOf(to)));
             modelMap.put("amountfrom", amountfrom);
+            modelMap.put("from", from);
+            modelMap.put("to", to);
         }
 
         //rates to table
