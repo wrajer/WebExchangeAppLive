@@ -5,7 +5,7 @@ import java.math.RoundingMode;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ExchangeOffice {
+public class  ExchangeOffice {
 
     private Map<Currency, BigDecimal> wallet = new HashMap<>();
     private BigDecimal startValue = new BigDecimal("10000");

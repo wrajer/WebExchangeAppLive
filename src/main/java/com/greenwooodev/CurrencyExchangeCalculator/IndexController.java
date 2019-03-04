@@ -2,6 +2,7 @@ package com.greenwooodev.CurrencyExchangeCalculator;
 
 import methods.Currency;
 import methods.CurrencyConverter;
+import methods.CurrencyModel;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -25,7 +26,7 @@ public class IndexController {
         }
 
         //rates to table
-        modelMap.put("ratetoeur", CurrencyConverter.convert(Currency.EUR, Currency.PLN));
+        modelMap.put("currency", new CurrencyModel());
         modelMap.put("ratetogbp", CurrencyConverter.convert(Currency.GBP, Currency.PLN));
         modelMap.put("ratetousd", CurrencyConverter.convert(Currency.USD, Currency.PLN));
         modelMap.put("ratetorub", CurrencyConverter.convert(Currency.RUB, Currency.PLN));
