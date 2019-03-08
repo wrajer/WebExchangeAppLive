@@ -18,7 +18,7 @@ public class IndexController {
                         @RequestParam(required = false) String to,
                         ModelMap modelMap) {
 
-        if (amountfrom!=null && from!=null && to!=null) {
+        if (amountfrom!=null && from!=null && to!=null && amountfrom!="") {
             modelMap.put("valueto", Double.parseDouble(amountfrom) * CurrencyConverter.convert(Currency.valueOf(from), Currency.valueOf(to)));
             modelMap.put("amountfrom", amountfrom);
             modelMap.put("from", from);
