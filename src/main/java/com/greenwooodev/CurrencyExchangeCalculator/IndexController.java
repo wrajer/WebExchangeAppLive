@@ -32,7 +32,6 @@ public class IndexController {
         modelMap.put("ratetorub", CurrencyConverter.convert(Currency.RUB, Currency.PLN));
         modelMap.put("ratetojpy", CurrencyConverter.convert(Currency.JPY, Currency.PLN));
         modelMap.put("ratetoczk", CurrencyConverter.convert(Currency.CZK, Currency.PLN));
-
         return "index";
     }
 }
